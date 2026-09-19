@@ -1,0 +1,25 @@
+stages:
+  prepare:
+    cmd: python src/prepare_data.py
+    deps:
+    - data/raw/iris.data
+    - src/prepare_data.py
+    outs:
+    - data/iris.csv
+  train:
+    cmd: python src/train.py
+    deps:
+    - data/iris.csv
+    - src/train.py
+    params:
+    - model.max_depth
+    - model.min_samples_leaf
+    - model.min_samples_split
+    - model.n_estimators
+    - random_state
+    - test_size
+    outs:
+    - models/model.joblib
+    metrics:
+    - metrics.json:
+        cache: false
