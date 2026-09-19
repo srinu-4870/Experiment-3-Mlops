@@ -43,5 +43,5 @@ metrics = {
 
 Path('models').mkdir(parents=True, exist_ok=True)
 joblib.dump(model, 'models/model.joblib')
-Path('metrics.json').write_text(json.dumps(metrics, indent=2) + '\\n', encoding='utf-8')
+Path('metrics.json').write_text(json.dumps(metrics, indent=2) + chr(10), encoding='utf-8')
 print(json.dumps(metrics, indent=2))
