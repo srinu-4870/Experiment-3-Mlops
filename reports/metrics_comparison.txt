@@ -1,0 +1,5 @@
+Path          Metric     v1-model    v2-model    Change
+metrics.json  accuracy   0.9         0.93333     0.03333
+metrics.json  f1_score   0.89975     0.93333     0.03358
+metrics.json  precision  0.90236     0.93333     0.03097
+metrics.json  recall     0.9         0.93333     0.03333

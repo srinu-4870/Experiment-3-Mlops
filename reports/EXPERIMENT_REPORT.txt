@@ -1,0 +1,20 @@
+MLOps Experiment 3 - Git and DVC
+
+Dataset: Iris Dataset
+
+V1 Metrics
+Accuracy: 0.90000
+Precision: 0.90236
+Recall: 0.90000
+F1-score: 0.89975
+
+V2 Metrics
+Accuracy: 0.93333
+Precision: 0.93333
+Recall: 0.93333
+F1-score: 0.93333
+
+Pipeline: prepare - train
+Reproducibility command: dvc repro
+Metric comparison: reports/metrics_comparison.txt
+Hyperparameter comparison: reports/params_comparison.txt
